@@ -2,16 +2,14 @@ public class Library {
     public static void main(String[] args) {
         final String appName = "Library v0.1";
 
-        Book book1 = new Book();
-        book1.title = "Efekt motyla";
-        book1.author = "Kamil Celubski";
-        book1.releaseDate = 2008;
-        book1.pages = 141;
-        book1.publisher ="Złote Myśli";
-        book1.isbn = "9788375821994";
+        Book book1 = new Book("Efekt motyla", "Kamil Celubski", 2008, 141, "Złote Myśli", "9788375821994");
+        Book book2 = new Book("Jesteś cudem", "Regina Brett", 2022, 256, "Insignis", "9788367323055");
+        Book book3 = new Book("Finansowa Forteca", "Marcin Iwuć", 2020, 800, "Finanse Bardzo Osobiste", "9788395846809");
 
         System.out.println(appName);
         System.out.println("Available items:");
-        System.out.println(book1.title + ", " + book1.author + ", " + book1.releaseDate + ", " + book1.pages + ", " + book1.publisher + ", " + book1.isbn);
+        System.out.println(book1.getBookInfo());
+        System.out.println(book2.getBookInfo());
+        System.out.println(book3.getBookInfo());
     }
 }
