@@ -14,5 +14,5 @@ This project is released under the MIT License.
 \
 \
 \
-**Technologies Used**
+**Technologies**
 * Java
