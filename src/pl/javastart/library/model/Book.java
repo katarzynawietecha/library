@@ -8,7 +8,7 @@ public class Book {
     private String publisher;
     private String isbn;
 
-    Book (String title, String author, int releaseDate, int pages, String publisher) {
+    public Book (String title, String author, int releaseDate, int pages, String publisher) {
         this.title = title;
         this.author = author;
         this.releaseDate = releaseDate;
