@@ -22,7 +22,11 @@ public class Book {
     }
     
     public String getBookInfo () {
-        return title + ", " + author + ", " + releaseDate + ", " + pages + ", " + publisher + ", " + isbn;
+        String info = title + ", " + author + ", " + releaseDate + ", " + pages + ", " + publisher;
+        if(isbn != null) {
+            info = info + ", " + isbn;
+        }
+        return info;
     }
 
     public String getTitle() {
